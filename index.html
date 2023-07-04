@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/71cc67ad11.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Ohmyfood - Accueil</title>
+</head>
+<body>
+    <section class="loader-section">
+        <p class="loader">Ohmyfood</p>
+    </section>
+
+    <header>
+        <div class="logo">
+            <img src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+        </div>
+    </header>
+
+    <form method="get" action="#">
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        <input class="city" type="search" name="city" id="city" placeholder="Paris, Belleville">
+        <label for="city"></label>
+    </form>
+
+    <section class="main-section">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p class="subtitle-h1">
+            Découvrez des restaurants d'exception, sélectionnés par nos soins.
+        </p>
+        <button class="button-restaurant"><a href="#restaurants">Explorer nos restaurants</a></button>
+    </section>
+
+    <section class="fonctionnement-section">
+        <h2>Fonctionnement</h2>
+        <div class="fonctionnements">
+            <div class="number">
+                <p>1</p>
+            </div>
+            <div class="fonctionnement">
+                <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+                <p>Choisissez un restaurant</p>
+            </div>
+            <div class="number">
+                <p>2</p>
+            </div>
+            <div class="fonctionnement">
+                <i class="fa-solid fa-list" aria-hidden="true"></i>
+                <p>Composez votre menu</p>
+            </div>
+            <div class="number">
+                <p>3</p>
+            </div>
+            <div class="fonctionnement">
+                <i class="fa-solid fa-store" aria-hidden="true"></i>
+                <p>Dégustez au restaurant</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="restaurant-section">
+        <h2 id="restaurants">Restaurants</h2>
+        <div class="card">
+        <article class="restaurant-card">
+            <a href="./la-palette-du-gout.html">
+                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'une assiette du restaurant La Palette du goût">
+                <span class="new">Nouveau</span>
+                <div class="card-txt">
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                </div>
+            </a>
+            <button class="like">
+                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                <i class="fa-solid fa-heart love" aria-hidden="true"></i>
+            </button>
+        </article>
+
+        <article class="restaurant-card">
+            <a href="#">
+                <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo d'une assiette du restaurant La note enchantée">
+                <span class="new">Nouveau</span>
+                <div class="card-txt">
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                </div>
+            </a>
+            <button class="like">
+                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                <i class="fa-solid fa-heart love" aria-hidden="true"></i>
+            </button>
+        </article>
+
+        <article class="restaurant-card">
+            <a href="#">
+                <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'une assiette du restaurant À la française">
+                <div class="card-txt">
+                    <h3>À la française</h3>
+                    <p>Cité Rouge</p>
+                </div>
+            </a>
+            <button class="like">
+                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                <i class="fa-solid fa-heart love" aria-hidden="true"></i>
+            </button>
+        </article>
+
+        <article class="restaurant-card">
+            <div class="card-content">
+            <a href="#">
+                <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'une assiette du restaurant Le délice des sens">
+                <div class="card-txt">
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+                </div>
+            </a>
+            </div>
+            <button class="like">
+                <i class="fa-regular fa-heart" aria-hidden="true"></i>
+                <i class="fa-solid fa-heart love" aria-hidden="true"></i>
+            </button>
+        </article>
+        </div>
+    </section>
+
+
+    <footer>
+        <h2>ohmyfood</h2>
+        <div class="foot">
+            <div class="foot-1">
+                <a href="#">
+                    <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+                    Proposer un restaurant
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-handshake-angle" aria-hidden="true"></i>
+                    Devenir partenaire
+                </a>
+            </div>
+            <div class="foot-1">
+                <a class="footer-link" href="#">
+                    Mentions légales
+                </a>
+                <a class="footer-link" href="#">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
