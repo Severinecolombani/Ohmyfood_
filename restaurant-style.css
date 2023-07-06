@@ -64,7 +64,12 @@ body {
   bottom: 0;
   top: -50px;
 }
-.main-section h1 {
+.main-section .title {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+.main-section .title h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-size: 28px;
@@ -72,16 +77,14 @@ body {
   padding-top: 30px;
   padding-left: 2.7%;
 }
-.main-section .like {
+.main-section .title .like {
   border: none;
   background-color: none;
   position: relative;
-  left: 87%;
-  right: 0;
-  top: -46px;
-  bottom: 0;
+  top: 40px;
+  right: -40px;
 }
-.main-section .like .fa-heart {
+.main-section .title .like .fa-heart {
   font-size: 22px;
   position: absolute;
   left: 0;
@@ -90,16 +93,16 @@ body {
   bottom: 0;
   cursor: pointer;
 }
-.main-section .like .love {
+.main-section .title .like .love {
   opacity: 0;
 }
-.main-section .like .love::before {
+.main-section .title .like .love::before {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: initial;
 }
-.main-section .like .love:hover {
+.main-section .title .like .love:hover {
   opacity: 1;
 }
 .main-section h2 {
@@ -268,6 +271,12 @@ footer .footer-link {
     padding-bottom: 60px;
     padding-top: 50px;
     margin-bottom: -50px;
+  }
+  .main-section .title {
+    justify-content: center;
+  }
+  .main-section .title h1 {
+    padding-left: 0;
   }
   .main-section .menus h2 {
     width: 40px;

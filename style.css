@@ -302,6 +302,7 @@ footer .footer-link {
   }
   to {
     opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes loader {

@@ -74,49 +74,56 @@ body {
     bottom: 0;
     top: -50px;
 
-    h1 {
-        font-family: 'Shrikhand', cursive;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: 41px;
-        padding-top: 30px;
-        padding-left: 2.7%;
+    .title {
+
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 30px;
+
+        h1 {
+            font-family: 'Shrikhand', cursive;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 41px;
+            padding-top: 30px;
+            padding-left: 2.7%;
+        }
+    
+        .like {
+            border: none;
+            background-color: none;
+            position: relative;
+            top: 40px;
+            right: -40px;
+            
+
+            .fa-heart {
+                font-size: 22px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                cursor: pointer;
+            }
+
+            .love {
+                opacity: 0; 
+
+                &::before {
+                    background: $button-bg-color;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    display: initial;
+                }
+             
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
     }
     
-    .like {
-        border: none;
-        background-color: none;
-        position: relative;
-        left: 87%;
-        right: 0;
-        top: -46px;
-        bottom: 0;
-
-        .fa-heart {
-            font-size: 22px;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            cursor: pointer;
-        }
-
-        .love {
-            opacity: 0; 
-
-            &::before {
-                background: $button-bg-color;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                display: initial;
-            }
-             
-            &:hover {
-                opacity: 1;
-            }
-        }
-    }
 
     h2 {
         width: 10%;
@@ -317,10 +324,17 @@ footer {
 
     .main-section {
         width: 73%;
-    
         padding-bottom: 60px;
         padding-top: 50px;
         margin-bottom: -50px;
+
+        .title {
+            justify-content: center;
+
+            h1 {
+                padding-left: 0;
+            }
+        }
 
         .menus {
             h2 {
