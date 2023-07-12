@@ -48,6 +48,10 @@ header .fa-arrow-left {
 .photo-restaurant img {
   width: 100%;
 }
+.photo-restaurant__2 {
+  margin-top: -100px;
+  margin-bottom: -100px;
+}
 
 body {
   position: relative;
@@ -68,6 +72,7 @@ body {
   display: flex;
   flex-direction: row;
   padding-bottom: 30px;
+  width: 100%;
 }
 .main-section .title h1 {
   font-family: "Shrikhand", cursive;
@@ -82,7 +87,7 @@ body {
   background-color: #F7F7F7;
   position: relative;
   top: 40px;
-  right: -40px;
+  right: -30px;
 }
 .main-section .title .like .fa-heart {
   font-size: 22px;
@@ -169,12 +174,20 @@ body {
   font-weight: 500;
   padding: 15px 0 2.5px 10px;
   line-height: 21px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
 }
 .main-section .menu .meals p {
   width: 100%;
   font-size: 15px;
   font-weight: 300;
   padding: 2.5px 0 0px 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
 }
 .main-section .menu .meals .price {
   width: 20px;

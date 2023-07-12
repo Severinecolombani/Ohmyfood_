@@ -56,6 +56,11 @@ header {
     img {
         width: 100%;
     }
+
+    &__2 {
+        margin-top: -100px;
+        margin-bottom: -100px;
+    }
 }
 
 body {
@@ -79,6 +84,7 @@ body {
         display: flex;
         flex-direction: row;
         padding-bottom: 30px;
+        width: 100%;
 
         h1 {
             font-family: 'Shrikhand', cursive;
@@ -94,7 +100,7 @@ body {
             background-color: $secondary-bg-color;
             position: relative;
             top: 40px;
-            right: -40px;
+            right: -30px;
             
 
             .fa-heart {
@@ -198,6 +204,10 @@ body {
                 font-weight: 500;
                 padding: 15px 0 2.5px 10px;
                 line-height: 21px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                display: block;
             }
 
             p {
@@ -205,6 +215,10 @@ body {
                 font-size: 15px;
                 font-weight: 300;
                 padding: 2.5px 0 0px 10px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                display: block;
             }
             
             .price {
@@ -224,8 +238,7 @@ body {
                 justify-content: center;
                 align-items: center;
                 margin-right: -70px;
-                
-
+            
                 .fa-circle-check {
                     color: $secondary-font-color;
                     font-size: 20px;
@@ -303,6 +316,7 @@ footer {
 
 /* RESPONSIVE */
 
+
 @media screen and (min-width: 1023px) {
 
     header {
@@ -326,6 +340,9 @@ footer {
     .photo-restaurant {
         margin-top: -300px;
         
+        &__2 {
+            
+        }
     }
 
     .main-section {
